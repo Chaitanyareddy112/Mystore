@@ -19,6 +19,8 @@ public class HomePageTest extends TestBase {
 	IndexPage indexpage;
 	HomePage homepage;
 	
+	// home
+	
 	@Parameters("browser")
 	@BeforeMethod(groups= {"Smoke", "Sanity", "Regression"})
 	public void setUp(String browser) {
