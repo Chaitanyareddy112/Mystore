@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Cross_browser]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Edgebrow(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.mystore.testcases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="loadConfig"/>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Edgebrow(failed) -->
+  <test thread-count="5" parallel="tests" name="Chromebrow(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.mystore.testcases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="loadConfig"/>
+          <include name="setUp"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.mystore.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Chromebrow(failed) -->
+</suite> <!-- Failed suite [Cross_browser] -->
